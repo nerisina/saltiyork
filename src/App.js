@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 
 const attractions = [
   {
@@ -6,7 +7,7 @@ const attractions = [
     description:
       'The Mori Art Museum strives to be a place for enjoyment, stimulation and discussion - a place where what is important in our culture and society is openly debated.',
     link: 'http://www.mori.art.museum',
-    image: 'image_1.jpg',
+    image: '/image_1.jpg',
     className: 'w-50-l'
   },
   {
@@ -126,7 +127,7 @@ const Intro = () => (
 const NavItem = (props) => (
   <li className={`mh2-ns f6 f4-1 tc ${props.className}`}>
     <a href={props.href} className="white no-underline">
-      {props.logo ? <img src="images/logo.svg" /> : props.children}
+      {props.logo ? <img alt="Logo" src="./images/logo.svg" /> : props.children}
     </a>
   </li>
 );
@@ -185,8 +186,8 @@ class Attraction extends React.Component {
       >
         <div className="relative">
           <Overlay {...this.props} showInfo={this.state.showInfo} />
-          <img src={`images/${this.props.image}`} className="db" />
-          <a href={this.props.link} target="_blank" class="hot-pink pt1 db">{this.props.title}</a>
+          <img alt={this.props.title} src={`images/${this.props.image}`} className="db" />
+          <a href={this.props.link} rel="noopener noreferrer" target="_blank" class="hot-pink pt1 db">{this.props.title}</a>
         </div>
       </div>
     );

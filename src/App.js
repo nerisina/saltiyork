@@ -127,7 +127,8 @@ const Intro = () => (
 const NavItem = (props) => (
   <li className={`mh2-ns f6 f4-1 tc ${props.className}`}>
     <a href={props.href} className="white no-underline">
-      {props.logo ? <img alt="Logo" src="./images/logo.svg" /> : props.children}
+      {props.title}
+      {/* {props.logo ? <img alt="Logo" src="./images/logo.svg" /> : props.children} */}
     </a>
   </li>
 );
@@ -186,7 +187,7 @@ class Attraction extends React.Component {
       >
         <div className="relative">
           <Overlay {...this.props} showInfo={this.state.showInfo} />
-          <img alt={this.props.title} src={`images/${this.props.image}`} className="db" />
+          {/* <img alt={this.props.title} src={`images/${this.props.image}`} className="db" /> */}
           <a href={this.props.link} rel="noopener noreferrer" target="_blank" class="hot-pink pt1 db">{this.props.title}</a>
         </div>
       </div>

@@ -2,17 +2,17 @@ import React from 'react';
 
 const attractions = [
   {
-    title: 'Mori Art Museum',
+    title: 'Museo del desierto',
     description:
-      'The Mori Art Museum strives to be a place for enjoyment, stimulation and discussion - a place where what is important in our culture and society is openly debated.',
-    link: 'http://www.mori.art.museum',
+      'The Desert Museum is a museum in Saltillo, Coahuila, that promotes an ecological culture. It was designed by the architect Francisco López Guerra and was inaugurated on 25 November 1999.',
+    link: 'www.facebook.com/cerdodebabel',
     image: '/image_1.jpg',
     className: 'w-50-l'
   },
   {
-    title: 'Robot Restaurant',
+    title: 'Taberna El Cerdo de Babel',
     description:
-      'Located in Shinjuku, the Robot Restaurant features a raucous pop-culture show with robotic monsters, dancers & lasers. A weird but wonderfully exciting experience.',
+      'Once a 16th-century Franciscan convent, this boho-hipster tavern has live music, regular art exhibits and film showings. Seating is spread over two floors, including a leafy front patio, along a pedestrian walkway. A popular spot, this place is a go-to for university students, professors and professionals.',
     link: 'http://www.shinjuku-robot.com/pc/system.php?lng=en',
     image: 'image_2.jpg',
     className: 'w-third-l ml5-l'
